@@ -11,9 +11,46 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"></Script>
+     
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossOrigin="anonymous"></Script>
+      <nav class="navbar navbar-expand-md custom_navs ">
+        <div class="container">
+          <a class="navbar-brand navbs_logo" href="contact.html">
+            <img src="image/orbit_logo.png" alt="" srcset=""/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars barsss"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto navbar_items">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Hero_part">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#service_part">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Latest_projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Team_part">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+              </li>
 
+
+
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
     </>
   )
 }
