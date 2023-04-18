@@ -1,4 +1,6 @@
 import React from 'react';
+import orbitLogo from "@/assets/orbit_logo.png";
+import Image from 'next/image';
 
 const Navbar = () => {
     return (
@@ -6,7 +8,12 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-md custom_navs ">
         <div className="container">
           <a className="navbar-brand navbs_logo" href="contact.html">
-            <img src="image/orbit_logo.png" alt="" srcSet=""/>
+            {/* <img src={orbitLogo} alt="" srcSet=""/> */}
+            <Image
+              src={orbitLogo}
+              alt="Orbit Logo"
+              width={140}
+            />
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
