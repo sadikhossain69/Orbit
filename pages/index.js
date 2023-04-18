@@ -1,3 +1,4 @@
+import GlobalLayout from '@/components/layout/GlobalLayout'
 import Head from 'next/head'
 import Script from 'next/script'
 
@@ -13,44 +14,9 @@ export default function Home() {
 
      
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossOrigin="anonymous"></Script>
-      <nav class="navbar navbar-expand-md custom_navs ">
-        <div class="container">
-          <a class="navbar-brand navbs_logo" href="contact.html">
-            <img src="image/orbit_logo.png" alt="" srcset=""/>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <i class="fas fa-bars barsss"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto navbar_items">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Hero_part">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#service_part">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Latest_projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Team_part">Our Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
-              </li>
-
-
-
-
-            </ul>
-
-          </div>
-        </div>
-      </nav>
+      <GlobalLayout>
+        
+      </GlobalLayout>
     </>
   )
 }
